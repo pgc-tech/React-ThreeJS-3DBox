@@ -46,12 +46,7 @@ export default function App() {
     e.preventDefault();
 
     addBox(
-      Number(height),
-      Number(width),
-      Number(length),
-      Number(positionX),
-      Number(positionY),
-      Number(positionZ)
+      Number(height, width, length, positionX, positionY, positionZ),
     );
     setHeight("");
     setWidth("");
@@ -103,7 +98,6 @@ export default function App() {
             <ambientLight intensity={0.6} />
             <pointLight intensity={1.0} position={[1, 1, 1]} />
             <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-
             {[...box]}
           </Suspense>
         </Canvas>

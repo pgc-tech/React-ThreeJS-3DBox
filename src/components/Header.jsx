@@ -10,7 +10,6 @@ const Header = () => {
           <Box width="45px" pr="2">
             <Image src={ReactLogo} />
           </Box>
-
           <Heading as="h1" size="lg">
             React-ThreeJS
           </Heading>
